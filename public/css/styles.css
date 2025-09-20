@@ -143,8 +143,12 @@ textarea {
     margin-bottom: 15px;
     overflow: hidden;
     display: -webkit-box;
+    display: -moz-box;
+    display: box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
+    box-orient: vertical;
 }
 
 .note-actions {
@@ -223,13 +227,6 @@ textarea {
     .notes-list {
         grid-template-columns: 1fr;
     }
-}
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 header {
